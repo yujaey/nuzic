@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=1320">
+		<title>NUZIC:</title>
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="js/slick.css">
+		<link rel="stylesheet" type="text/css" href="js/slick-theme_.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/gallery_style.css">
+		<script src="js/jquery-1.12.4.min.js"></script>
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<div id="background">
+			<div id="header">
+				<ul id="util">
+					<li><a href="javascript:return false;">LOG IN</a></li>
+					<li><a href="javascript:return false;">SIGN IN</a></li>
+				</ul>
+				<h1><a href="#"><img src="images/logo.png" alt="logo"></a></h1>
+				<ul id="gnb">
+					<li><a href="sub/about.html">ABOUT</a></li>
+					<li><a href="sub/membership.html">MEMBERSHIP</a></li>
+					<li><a href="https://yujaey.github.io/nuzic_sub/shop.html">SHOP</a></li>
+					<li><a href="https://yujaey.github.io/nuzic_sub/nuzician.html">NUZICIAN:</a></li>
+					<li><a href="https://yujaey.github.io/nuzic_sub/support.html">SUPPORT</a></li>
+				</ul>
+			</div>
+				<div id="slide">
+					<ul>
+						<li><a href="javascript:return false;"><img src="images/main_banner.png" alt="land" class="slideimg1"></a></li>
+						<li><a href="javascript:return false;"><img src="images/main_banner2.png" alt="land"class="slideimg2"></a></li>
+						<li><a href="javascript:return false;"><img src="images/main_banner3.png" alt="land"class="slideimg3"></a></li>
+					</ul>
+					<p class="main_text">
+						ALL I EVER<br>NEED IS<br>NUZIC:
+					</p>
+					<div class="banner_button"><a href="sub/membership.html">무료 체험하기</a></div>
+				</div>
+				
+				
+			<div id="contents">
+				<div id="playlist_wrap">
+					<div class="textbox">
+						<p class="small_title">MY OWN<br><span>PLAYLIST</span></p>
+						<p class="info">나만의 취향을 가득 담은<br>플레이리스트를 만들어보세요!</p>
+						<a href="sub/about.html"><img src="images/more.png" alt="more"></a>
+					</div>
+					<ul id="playlist">
+						<li><img src="images/main_playlist1.png" alt="1"></li>
+						<li><img src="images/main_playlist2.png" alt="2"></li>
+						<li><img src="images/main_playlist3.png" alt="3"></li>
+					</ul>
+				</div>
+				<div id="membership_wrap">
+					<div class="photobox">
+						<ul id="membership">
+							<li><img src="images/membership_single.png" alt=""><br>싱글</li>
+							<li><img src="images/membership_duo.png" alt=""><br>듀오</li>
+							<li><img src="images/membership_family.png" alt=""><br>패밀리</li>
+						</ul>
+					</div>
+					<div class="textbox">
+						<p class="small_title">CHECK OUR<br><span>MEMBERSHIP</span></p>
+						<p class="info">나에게 맞출 수 있는<br>다양한 멤버십들이 있습니다.</p>
+						<a href="sub/membership.html"><img src="images/more.png" alt=""></a>
+					</div>
+				</div>
+					<div id="shop">
+						<div class="shop_text">
+							<p class="small_title">BETTER MUSIC,<br><span>BETTER DESIGN</span></p>
+							<p class="info">누지크의 아이덴티티와<br>감각적인 디자인이 들어간 굿즈를<br>지금 바로 만나보세요!</p>
+							<a href="https://yujaey.github.io/nuzic_sub/shop.html"><img src="images/more.png" alt="more"></a>
+						</div>
+						<section class="shop_slide regular slider">
+							<div>
+								<img src="images/slide/main_phonecase1.png">
+							</div>
+							<div>
+								<img src="images/slide/main_phonecase2.png">
+							</div>
+							<div>
+								<img src="images/slide/main_phonecase3.png">
+							</div>
+							<div>
+								<img src="images/slide/main_airpods.png">
+							</div>
+							<div>
+								<img src="images/slide/main_airpods2.png">
+							</div>
+							<div>
+								<img src="images/slide/main_speakers.png">
+							</div>
+							<div>
+								<img src="images/slide/main_popsocket.png">
+							</div>
+						</section>
+
+						<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+						<script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+						<script type="text/javascript">
+							$(document).on('ready', function() {
+						$(".regular").slick({infinite: true , /* 맨끝이미지에서 끝나지 않고 다시 맨앞으로 이동 */         
+						slidesToShow: 3, /* 화면에 보여질 이미지 갯수*/        
+						slidesToScroll: 1,  /* 스크롤시 이동할 이미지 갯수 */         
+						autoplay: true, /* 자동으로 다음이미지 보여주기 */         
+						arrows: true, /* 화살표 */         
+						dots:true, /* 아래점 */  
+						cssEase: 'linear',  /* 등속 */       
+						autoplaySpeed:0,/* 다음이미지로 넘어갈 시간 */         
+						speed:3000 , /* 다음이미지로 넘겨질때 걸리는 시간 */         
+						pauseOnHover:true, /* 마우스 호버시 슬라이드 이동 멈춤 */        
+						//vertical:true,/* 세로방향으로 슬라이드를 원하면 추가하기// 기본값 가로방향 슬라이드*/        
+									});
+
+							});
+					</script>
+					</div>
+					<div id="taste">
+						<div class="textbox">
+							<p class="small_title">LET ME FIND YOUR <span>TASTE</span>!</p>
+							<p class="info">똑똑한 알고리즘은<br>당신도 모르던 취향을<br>찾아줍니다.</p>
+							<a href="sub/about.html"><img src="images/more.png" alt="more"></a>
+						</div>
+				 </div>
+				 <div id="nuzician">
+					<div class="textbox">
+						<p class="small_title">WE SUPPORT YOUR VIBE.<br><span>NUZICIAN:</span></p>
+							<p class="info">나만 알던 가수가 만약<br>슈퍼스타가 될 수 있다면 어떨까요?<br>그들의 열정을 누지크와 함께 응원해주세요.</p>
+							<a href="https://yujaey.github.io/nuzic_sub/nuzician.html"><img src="images/more.png" alt="more"></a>
+					</div>
+				 </div>
+				 <div id="customers">
+					 <p class="cs_title">CUSTOMER SERVICE FOR <span>24 HOURS</span></p>
+					 <p class="cs_info">궁금한 점이 있다면 언제나 물어보세요!</p>
+					 <img src="images/main_csbear.png" alt=""><br>
+				   <a href="https://yujaey.github.io/nuzic_sub/support.html"><img src="images/more.png" alt=""></a>
+					</div>
+					<div id="download">
+						<p class="appstore"><a href="javascript:return false;"><img src="images/appstore.png" alt=""></a></p>
+						<p class="googleplay"><a href="javascript:return false;"><img src="images/googleplay.png" alt=""></a></p>
+				 </div>
+				 </div>
+				 <div id="footer">
+					<p class="footer_logo">
+					 <img src="images/footer_logo.png" alt="">	 
+					</p>
+					<ul id="footer_text">
+						<li><a href="javascript:return false;">회사소개</a></li>
+						<li><a href="javascript:return false;">이용약관</a></li>
+						<li><a href="javascript:return false;">개인정보 처리방침</a></li>
+						<li><a href="javascript:return false;">사업자정보 확인</a></li>
+						<li><a href="javascript:return false;">청소년 보호정책</a></li>
+					</ul>
+					<br>
+					<p class="footer_text2">
+						대표이사 : 유재이｜이메일 : nuzic@hi-nuzic.com｜사업자 등록번호 : 123-45-678909｜통신판매업 신고번호｜2022-서울서초-1234<br>
+						누지크타운 : 서울특별시 서초구 강남대로 311 드림플러스｜대표전화 : 1588-1588<br>
+						COPYRIGHT © NUZIC ALL RIGHTS RESERVED.
+					</p>
+					<ul id="sns">
+						<li><a href="javascript:return false;"><img src="images/instagram.png" alt=""></a></li>
+						<li><a href="javascript:return false;"><img src="images/tweeter.png" alt=""></a></li>
+						<li><a href="javascript:return false;"><img src="images/facebook.png" alt=""></a></li>
+						<li><a href="javascript:return false;"><img src="images/youtube.png" alt=""></a></li>
+					</ul>
+				</div>
+			</div>
+	</body>
+</html>
+
+
+
+
+
